@@ -1,16 +1,21 @@
 package kalkulator;
 
-import com.sun.java_cup.internal.runtime.Scanner;
+import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		java.util.Scanner scr = new java.util.Scanner(System.in);
+		Scanner scr = new Scanner(System.in);
 		String komanda="";
 		do {	
 		komanda=scr.nextLine();
+		if (komanda.equals("")) {
+			continue;
+		}
 		} while (!komanda.equals("End"));
 	}
+	
+	
 
 }
