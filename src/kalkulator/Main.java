@@ -13,6 +13,10 @@ public class Main {
 		if (komanda.equals("")) {
 			continue;
 		}
+		String[] kom=komanda.split(" ");
+		if (kom.length!=3) {
+			continue;
+		}
 		} while (!komanda.equals("End"));
 	}
 	
