@@ -20,8 +20,8 @@ public class Main {
 		int x=Integer.parseInt(kom[0]);
 		int y=Integer.parseInt(kom[2]);
 		switch (kom[1]) {
-		case "+":
-			int z=x+y;
+		case "-":
+			int z=sub(x,y);
 			System.out.println("Rezultat je "+ z);
 			break;
 		default:
@@ -34,4 +34,9 @@ public class Main {
 	
 	
 
+
+
+public static int sub (int a, int b) {
+	return a-b;
+}
 }
