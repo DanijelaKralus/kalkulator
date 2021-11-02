@@ -21,7 +21,7 @@ public class Main {
 		int y=Integer.parseInt(kom[2]);
 		switch (kom[1]) {
 		case "+":
-			int z=x+y;
+			int z=addition(x,y);
 			System.out.println("Rezultat je "+ z);
 			break;
 		default:
@@ -34,4 +34,9 @@ public class Main {
 	
 	
 
+
+
+public static int addition (int a, int b) {
+	return a+b;
+}
 }
