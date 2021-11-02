@@ -17,6 +17,18 @@ public class Main {
 		if (kom.length!=3) {
 			continue;
 		}
+		int x=Integer.parseInt(kom[0]);
+		int y=Integer.parseInt(kom[2]);
+		switch (kom[1]) {
+		case "+":
+			int z=x+y;
+			System.out.println("Rezultat je "+ z);
+			break;
+		default:
+			System.out.println("Operand nije podrzan");
+		}
+		
+		
 		} while (!komanda.equals("End"));
 	}
 	
